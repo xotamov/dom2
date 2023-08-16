@@ -38,3 +38,23 @@ buttons.forEach(btn => {
         defaultSelected = iPhone
     }
 })
+
+
+let modal = document.querySelector('.modal')
+let btnOpen = document.querySelectorAll('[data-open]')
+let btnClose = document.querySelectorAll('[data-close]') 
+let modal_bg = document.querySelector('.modal_bg')
+btnOpen.forEach(btn => {
+    btn.onclick = () => {
+        modal.style.display = 'block'
+        modal_bg.style.display = 'block'
+        
+    }
+})
+
+btnClose.forEach(btn => {
+    btn.onclick = () => {
+        modal.style.display = 'none'
+        modal_bg.style.display = 'none'
+    }
+})
